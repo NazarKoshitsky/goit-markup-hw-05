@@ -238,6 +238,7 @@ header .container {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   background-color: #4d5ae5;
 }
@@ -246,9 +247,7 @@ header .container {
 .order-button:focus {
   background-color: #404bbf;
 }
-.order-button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 /* ===============/Hero section======== */
 
 /* ============BENEFITS =========== */
@@ -458,7 +457,7 @@ header .container {
 }
 
 .social-links-footer {
-  margin: 0;
+  margin-right: 80px;
 }
 
 .logo-studio {
@@ -507,6 +506,67 @@ header .container {
 .footer-social-item:focus {
   background-color: #31d0aa;
 }
+
+.footer-form-searching-label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.searching-input-place::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.searching-input-place {
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: #2e2f42;
+  outline: transparent;
+  outline-offset: 5px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.searching-input-place:focus {
+  border-color: #4d5ae5;
+}
+
+.footer-form-searching-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
+.footer-form-searching-button-icon {
+  fill: #ffffff;
+}
+
+.searching-form-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
 /* ============/FOOTER=========== */
 
 /* ============BACKDROP STYLES=========== */
@@ -554,19 +614,26 @@ header .container {
   right: 24px;
   width: 24px;
   height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-}
-
-.modal-close-btn-icon:hover,
-.modal-close-btn-icon:focus {
-}
 .modal-close-btn-icon {
   width: 8px;
   height: 8px;
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+  fill: #f4f4fd;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
 }
 
 .review-form-description {
@@ -642,5 +709,72 @@ header .container {
   border-color: #4d5ae5;
   outline-color: transparent;
   outline-offset: 5px;
+}
+
+.review-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.review-form-own-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 3px;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-checkbox-label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.privacy-policy-link {
+  text-decoration-line: underline;
+  color: #4d5ae5;
+}
+
+.review-form-checkbox:checked + .review-form-checkbox-label .review-form-own-checkbox {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.review-form-checkbox:focus + .review-form-checkbox-label .review-form-own-checkbox {
+  outline: 1px solid #404bbf;
+}
+
+.review-form-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-button:hover,
+.review-form-button:focus {
+  background-color: #404bbf;
+}
+
+.button-form-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 /* ============/REVIEW FORM STYLES=========== */

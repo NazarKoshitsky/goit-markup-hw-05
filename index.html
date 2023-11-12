@@ -567,12 +567,31 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form-searching">
+          <div class="footer-form-searching-container">
+            <label class="footer-form-searching-label" for="searching-input">Subscribe</label>
+            <div class="searching-form-wrapper">
+              <input
+                class="searching-input-place"
+                type="text"
+                id="searching-input"
+                placeholder="E-mail"
+              />
+              <button class="footer-form-searching-button" type="submit">
+                Subscribe
+                <svg class="footer-form-searching-button-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-close-btn" type="button" width="24" heigth="24">
-          <svg class="modal-close-btn-icon" width="8" heigth="8" aria-label="modal close button">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-btn-icon" aria-label="modal close button">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -590,7 +609,7 @@
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]+"
                 title="Nazar"
               />
-              <svg class="review-form-field-icon" width="18" height="18">
+              <svg class="review-form-field-icon" width="18" height="18" aria-label="icon person">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -607,7 +626,7 @@
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
               />
-              <svg class="review-form-field-icon" width="18" height="18">
+              <svg class="review-form-field-icon" width="18" height="18" aria-label="icon phone">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -622,7 +641,7 @@
                 id="user-emeil"
                 required
               />
-              <svg class="review-form-field-icon" width="18" height="18">
+              <svg class="review-form-field-icon" width="18" height="18" aria-label="icon emeil">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -638,7 +657,7 @@
           </div>
           <div class="review-form-checkbox-wrapper">
             <input
-              class="review-form-checkbox"
+              class="review-form-checkbox visually-hidden"
               type="checkbox"
               name="user_policy"
               id="user-policy"
@@ -646,11 +665,23 @@
               required
             />
             <label class="review-form-checkbox-label" for="user-policy">
+              <span class="review-form-own-checkbox">
+                <svg
+                  class="review-form-own-checkbox-icon"
+                  width="10"
+                  height="8"
+                  aria-label="icon checkbox"
+                >
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
           </div>
-          <button class="review-form-button" type="submit">Send</button>
+          <button class="review-form-button" type="submit">
+            <span class="button-form-text">Send</span>
+          </button>
         </form>
       </div>
     </div>
