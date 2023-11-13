@@ -568,24 +568,23 @@
           </ul>
         </div>
         <div class="footer-form-searching-wrapper">
+          <p class="footer-form-searching-title">Subscribe</p>
           <form class="footer-form-searching">
-            <div class="footer-form-searching-container">
-              <label class="footer-form-searching-label" for="searching-input">Subscribe</label>
-              <div class="searching-form-wrapper">
-                <input
-                  class="searching-input-place"
-                  type="text"
-                  id="searching-input"
-                  placeholder="E-mail"
-                  name="searching_input"
-                />
-                <button class="footer-form-searching-button" type="submit">
-                  Subscribe
-                  <svg class="footer-form-searching-button-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-telegram"></use>
-                  </svg>
-                </button>
-              </div>
+            <label class="footer-form-searching-label" for="searching-input"></label>
+            <div class="searching-form-wrapper">
+              <input
+                class="searching-input-place"
+                type="text"
+                id="searching-input"
+                placeholder="E-mail"
+                name="searching_input"
+              />
+              <button class="footer-form-searching-button" type="submit">
+                Subscribe
+                <svg class="footer-form-searching-button-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
@@ -606,13 +605,13 @@
               <input
                 class="review-form-field"
                 type="text"
-                name="user_first_name"
+                name="user-name"
                 id="user-name"
                 required
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]+"
                 title="Nazar"
               />
-              <svg class="review-form-field-icon" width="18" height="18" aria-label="icon person">
+              <svg class="review-form-field-icon" width="18" height="24" aria-label="icon person">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -662,7 +661,7 @@
             <input
               class="review-form-checkbox visually-hidden"
               type="checkbox"
-              name="user_policy"
+              name="user-privacy"
               id="user-privacy"
               value="true"
               required
