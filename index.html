@@ -567,44 +567,47 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form-searching">
-          <div class="footer-form-searching-container">
-            <label class="footer-form-searching-label" for="searching-input">Subscribe</label>
-            <div class="searching-form-wrapper">
-              <input
-                class="searching-input-place"
-                type="text"
-                id="searching-input"
-                placeholder="E-mail"
-              />
-              <button class="footer-form-searching-button" type="submit">
-                Subscribe
-                <svg class="footer-form-searching-button-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-telegram"></use>
-                </svg>
-              </button>
+        <div class="footer-form-searching-wrapper">
+          <form class="footer-form-searching">
+            <div class="footer-form-searching-container">
+              <label class="footer-form-searching-label" for="searching-input">Subscribe</label>
+              <div class="searching-form-wrapper">
+                <input
+                  class="searching-input-place"
+                  type="text"
+                  id="searching-input"
+                  placeholder="E-mail"
+                  name="searching_input"
+                />
+                <button class="footer-form-searching-button" type="submit">
+                  Subscribe
+                  <svg class="footer-form-searching-button-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
-          <svg class="modal-close-btn-icon" aria-label="modal close button">
+          <svg class="modal-close-btn-icon" width="8" height="8" aria-label="modal close button">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="review-form-description">Leave your contacts and we will call you back</p>
         <form class="review-form">
           <div class="review-form-label-wrapper">
-            <label class="review-form-field-label" for="user-first-name">Name</label>
+            <label class="review-form-field-label" for="user-name">Name</label>
             <div class="review-form-input-wrapper">
               <input
                 class="review-form-field"
                 type="text"
                 name="user_first_name"
-                id="user-first-name"
+                id="user-name"
                 required
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]+"
                 title="Nazar"
@@ -626,7 +629,7 @@
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
               />
-              <svg class="review-form-field-icon" width="18" height="18" aria-label="icon phone">
+              <svg class="review-form-field-icon" width="18" height="24" aria-label="icon phone">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -641,7 +644,7 @@
                 id="user-emeil"
                 required
               />
-              <svg class="review-form-field-icon" width="18" height="18" aria-label="icon emeil">
+              <svg class="review-form-field-icon" width="18" height="24" aria-label="icon emeil">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -650,7 +653,7 @@
             <label class="review-form-field-label" for="user-comment">Comment</label>
             <textarea
               class="review-form-message"
-              name="user_comment"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
@@ -660,11 +663,11 @@
               class="review-form-checkbox visually-hidden"
               type="checkbox"
               name="user_policy"
-              id="user-policy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="review-form-checkbox-label" for="user-policy">
+            <label class="review-form-checkbox-label" for="user-privacy">
               <span class="review-form-own-checkbox">
                 <svg
                   class="review-form-own-checkbox-icon"
