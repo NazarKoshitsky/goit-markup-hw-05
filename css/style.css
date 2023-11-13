@@ -569,12 +569,12 @@ header .container {
 .footer-form-searching-button-icon {
   fill: #ffffff;
 }
-
-.searching-form-wrapper {
+.footer-form-searching {
   display: flex;
   align-items: baseline;
   gap: 24px;
 }
+
 /* ============/FOOTER=========== */
 
 /* ============BACKDROP STYLES=========== */
@@ -709,6 +709,10 @@ header .container {
 }
 .review-form-label-wrapper {
   margin-bottom: 8px;
+}
+
+.wrapper-textarea {
+  margin-bottom: 16px;
 }
 
 .review-form-message {
